@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HighlightsModule",
-    "slug": "HighlightsModule",
+    "name": "Highlightsmodule",
+    "slug": "Highlightsmodule",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

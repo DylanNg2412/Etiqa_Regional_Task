@@ -2,11 +2,12 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Provider } from "react-redux";
-import { store } from "./store";
+
 import HomeScreen from "./HomeScreen";
 import HighlightDetailsScreen from "./highlights/HighlightDetailScreen";
 import HighlightsListScreen from "./highlights/HighlightsListScreen";
 import WebViewScreen from "./rewards/WebViewScreen";
+import { store } from "./store/store";
 
 export type RootStackParamList = {
   Home: undefined;

@@ -19,6 +19,7 @@ import {
   selectAnnouncementsLoading,
   selectAnnouncementsError,
 } from "../store/selectors/announcementsSelectors";
+import { ApiAnnouncement } from "../api";
 
 export type RootStackParamList = {
   Home: undefined;
@@ -80,7 +81,7 @@ const HighlightsSection = () => {
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={{ paddingLeft: 16, paddingRight: 16 }}
     >
-      {activeAnnouncements.map((item) => (
+      {activeAnnouncements.map((item: ApiAnnouncement) => (
         <Pressable
           key={item.id}
           onPress={() => {
